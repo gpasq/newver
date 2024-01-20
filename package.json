@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Update semantic version",
   "main": "newver.js",
+  "type": "module",
   "bin": {
     "newver": "./newver.js"
   },

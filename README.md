@@ -1,6 +1,5 @@
-To install this locally, check out the project, cd to the folder, then
-run 
+To install this locally, run 
 
-```npm install -g .```
+``` npm install -g git+https://github.com/gpasq/newver.git```
 
-After completion, you can run `node version` in any folder with a `CURRENT_VERSION` file.
+After completion, you can run `newver` in any folder with a `CURRENT_VERSION` file.

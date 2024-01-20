@@ -1,8 +1,15 @@
 #!/usr/bin/env node
 
-const fs = require('node:fs');
-try {
-    const v = fs.readFileSync('CURRENT_VERSION', 'utf8');
+import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+
+const filename = "CURRENT_VERSION"
+
+if (!existsSync(filename)) {
+    console.log("New version: 1.0.0");
+    writeFileSync(filename, "1.0.0");
+}
+else {
+    const v = readFileSync(filename, 'utf8');
     const vals = v.split(".")
 
     if (vals.length !== 3) {
@@ -16,9 +23,5 @@ try {
     console.log("Current version: " + major + "." + minor + "." + patch)
     console.log("New version: " + major + "." + minor + "." + (Number(patch) + 1))
 
-    fs.writeFileSync("CURRENT_VERSION", major + "." + minor + "." + (Number(patch) + 1))
-
-} catch (err) {
-    console.error(err);
+    writeFileSync(filename, major + "." + minor + "." + (Number(patch) + 1))
 }
-
