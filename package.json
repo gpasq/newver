@@ -1,0 +1,12 @@
+{
+  "name": "newver",
+  "version": "1.0.0",
+  "description": "Update semantic version",
+  "main": "newver.js",
+  "scripts": {
+    "newver": "node newver.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
