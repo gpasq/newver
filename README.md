@@ -3,3 +3,6 @@ I made this to have a platform agnostic `newver` command to run on Mac, Linux, a
 ``` npm install -g git+https://github.com/gpasq/newver.git```
 
 After completion, you can run `newver` in any folder with a `CURRENT_VERSION` file.
+
+Note that this currently only updates the patch version, but I'll add major and minor
+version updates in a new build.
