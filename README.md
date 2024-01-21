@@ -9,3 +9,7 @@ file is found, it will create one and set the version string to "1.0.0".
 
 Note that this currently only updates the patch version, but I'll add major and minor
 version updates in a new build.
+
+## CurVer
+The `CurVer` command is also provided to print the current version.  This is useful in tools that 
+need to get the current version in an OS independent manner.
