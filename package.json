@@ -5,7 +5,8 @@
   "main": "newver.js",
   "type": "module",
   "bin": {
-    "newver": "./newver.js"
+    "newver": "./newver.js",
+    "curver": "./curver.js"
   },
   "scripts": {
     "newver": "node newver.js"
